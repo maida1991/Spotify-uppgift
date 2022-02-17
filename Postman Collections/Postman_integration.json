@@ -362,11 +362,27 @@
       "id": "5844ca1e-0eab-48fd-b817-4adb0e887483"
     }
   ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": {
+      "addTokenTo": "header",
+      "grant_type": "authorization_code",
+      "useBrowser": false,
+      "client_authentication": "header",
+      "scope": "playlist-modify-public playlist-read-private playlist-modify-private",
+      "redirect_uri": "https://oauth.pstmn.io/v1/browser-callback",
+      "accessTokenUrl": "https://accounts.spotify.com/api/token",
+      "authUrl": "https://accounts.spotify.com/authorize",
+      "clientSecret": "826d7d9849e247f6aa0162e4d3457e2a",
+      "clientId": "f3406d8fc77c420c9417ced55b38961e",
+      "tokenName": "Spotify"
+    }
+  },
   "event": [
     {
       "listen": "prerequest",
       "script": {
-        "id": "38c4772c-fb6b-4fdd-ad1e-f070f2c065d4",
+        "id": "7b2375c6-0c58-482d-9af2-fa5b8a1701aa",
         "type": "text/javascript",
         "exec": [
           ""
@@ -376,7 +392,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "168fac80-ed21-4484-89df-64799ddc21b2",
+        "id": "0727d548-77ff-405a-b0e1-4e65eeefa39c",
         "type": "text/javascript",
         "exec": [
           ""
@@ -386,7 +402,7 @@
   ],
   "variable": [
     {
-      "id": "0fbb9e86-a1aa-4f28-ae12-83e82956493e",
+      "id": "699042bf-a2e4-49b9-8973-b66de0068829",
       "key": "variable_key",
       "value": ""
     }
