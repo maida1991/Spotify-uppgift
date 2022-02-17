@@ -297,21 +297,7 @@
     },
     {
       "name": "Test",
-      "item": [
-        {
-          "name": "New Request",
-          "id": "dbcd8998-a59e-4e69-9163-c0728fabebdf",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": null
-          },
-          "response": []
-        }
-      ],
+      "item": [],
       "id": "5844ca1e-0eab-48fd-b817-4adb0e887483"
     }
   ],
@@ -352,7 +338,7 @@
   ],
   "variable": [
     {
-      "id": "265f1f7c-bdbd-48cb-b49e-c614fe1afd1b",
+      "id": "6dd8ffe7-d80a-43d6-babd-9ea730a6b8fe",
       "key": "variable_key",
       "value": ""
     }
