@@ -34,9 +34,6 @@
             "disableBodyPruning": true
           },
           "request": {
-            "auth": {
-              "type": "noauth"
-            },
             "method": "GET",
             "header": [],
             "url": {
@@ -390,7 +387,7 @@
   ],
   "variable": [
     {
-      "id": "b1b2c1c2-a85c-42e0-b574-ba02c908be2b",
+      "id": "f005acf2-473b-45a9-be97-e44e88f08c59",
       "key": "variable_key",
       "value": ""
     }
