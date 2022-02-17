@@ -102,6 +102,10 @@
               "script": {
                 "id": "7610e890-d8b9-4397-aa4c-c2726a18253b",
                 "exec": [
+                  "pm.test(\"Playlist name\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.name).to.eql(\"Maida Demo1\");\r",
+                  "});\r",
                   ""
                 ],
                 "type": "text/javascript"
@@ -346,7 +350,7 @@
   ],
   "variable": [
     {
-      "id": "5932ba75-5766-4c5d-8b2e-81d0a49178b3",
+      "id": "683205c7-3dd5-4e8a-b42f-efafa85465a2",
       "key": "variable_key",
       "value": ""
     }
