@@ -10,7 +10,21 @@
       "item": [
         {
           "name": "New Folder",
-          "item": [],
+          "item": [
+            {
+              "name": "New Request",
+              "id": "41b83441-8816-42f8-825b-4d78bde8c699",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
+            }
+          ],
           "id": "b67a14f7-4fe6-45f6-9e69-0d59d0404791",
           "event": [
             {
@@ -365,7 +379,7 @@
   ],
   "variable": [
     {
-      "id": "d68cf451-8cb3-4d6f-934b-e9b396e409b8",
+      "id": "0160eaf4-ff9e-453b-9a5e-d320d3241efc",
       "key": "variable_key",
       "value": ""
     }
