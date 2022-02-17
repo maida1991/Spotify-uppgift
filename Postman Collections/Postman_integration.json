@@ -18,6 +18,10 @@
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "pm.test(\"Artist name\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.name).to.eql(Ed Sheeran);\r",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -338,7 +342,7 @@
   ],
   "variable": [
     {
-      "id": "cf21626a-4998-47b4-b726-7c7d11c34d6d",
+      "id": "f4d624f0-6feb-46fb-8635-20535327da2f",
       "key": "variable_key",
       "value": ""
     }
