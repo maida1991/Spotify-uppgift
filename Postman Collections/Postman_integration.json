@@ -16,7 +16,9 @@
               "script": {
                 "id": "74493d03-ba6e-4493-8e3a-c4168f530d22",
                 "exec": [
-                  "pm.environment.get(\"Spotify\");"
+                  "pm.test(\"Status code is 201\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -338,7 +340,7 @@
   ],
   "variable": [
     {
-      "id": "760c59b3-7f75-4779-bf27-87a071e752d3",
+      "id": "f23c9da3-c628-480b-8ff8-eaa879078013",
       "key": "variable_key",
       "value": ""
     }
