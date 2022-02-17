@@ -162,10 +162,7 @@
               "script": {
                 "id": "d6ccea18-21a2-4342-9316-44f9a52fbb76",
                 "exec": [
-                  "pm.test(\"ID\", function () {\r",
-                  "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.snapshot_id).to.eql(\"MjAsZDE1MDNjNWQ3YWNlM2VmOGE0YzQ0YjhlZTVjMmQ3ZGVmZmEwMDEwNg==\");\r",
-                  "});"
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -180,7 +177,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "",
+              "raw": "{\r\n  \"name\": \"Dino, Vanna\",\r\n  \"description\": \"New songs on my playlist\",\r\n  \"public\": false\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -374,7 +371,7 @@
   ],
   "variable": [
     {
-      "id": "3555fb38-f2da-4f68-ab6a-4743cf661173",
+      "id": "45d3ef61-e95c-407b-8e33-909b302cca19",
       "key": "variable_key",
       "value": ""
     }
