@@ -180,7 +180,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"snapshot_id\": \"MTksM2RlZjk0MDA3ZTNiOGRjYmFhYTE3ZGQ3MWFjNzU4NjBiNmMwZjlhYQ==\"\r\n}",
+              "raw": "",
               "options": {
                 "raw": {
                   "language": "json"
@@ -374,7 +374,7 @@
   ],
   "variable": [
     {
-      "id": "7269c8e5-ea9a-4b57-abff-91c556a76385",
+      "id": "3555fb38-f2da-4f68-ab6a-4743cf661173",
       "key": "variable_key",
       "value": ""
     }
