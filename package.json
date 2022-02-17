@@ -1,4 +1,4 @@
-{
+ {
   "name": "spotify-uppgift",
   "version": "1.0.0",
   "description": "maida 123\r 000",
@@ -10,10 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/maida1991/Spotify-uppgift.git"
   },
-  "author": "",
+  "author": "Maida",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maida1991/Spotify-uppgift/issues"
   },
-  "homepage": "https://github.com/maida1991/Spotify-uppgift#readme"
+  "homepage": "https://github.com/maida1991/Spotify-uppgift#readme",
+  "keywords": []
 }
