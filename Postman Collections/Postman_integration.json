@@ -71,14 +71,7 @@
               "script": {
                 "id": "f6082494-44d0-4df6-b5cf-756fe6ab5533",
                 "exec": [
-                  "pm.test(\"Your test name\", function () {\r",
-                  "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.total).to.eql(0);\r",
-                  "\r",
-                  "pm.test(\"Body is correct\", function () {\r",
-                  "    pm.response.to.have.body(\"0\");\r",
-                  "});\r",
-                  "});"
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -447,7 +440,7 @@
   ],
   "variable": [
     {
-      "id": "a5085b26-5f7f-4588-8cf6-17cb617a9b97",
+      "id": "c0d6c9f3-faff-49df-9dea-a89ef37c32cf",
       "key": "variable_key",
       "value": ""
     }
