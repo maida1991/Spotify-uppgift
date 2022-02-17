@@ -19,10 +19,11 @@
                   "pm.test(\"Status code is 200\", function () {\r",
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
-                  "pm.test(\"Artist test\", function () {\r",
+                  "pm.test(\"Artist name\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.spotify).to.eql(\"https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V\");\r",
-                  "});"
+                  "    pm.expect(jsonData.spotify).to.eql(\"Ed Sheeran\");\r",
+                  "});\r",
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -342,7 +343,7 @@
   ],
   "variable": [
     {
-      "id": "2bf1fb13-c71b-4f50-9cf1-74c259551609",
+      "id": "eb25fc6c-6f98-4ce1-8c47-6c5e9f6a9269",
       "key": "variable_key",
       "value": ""
     }
