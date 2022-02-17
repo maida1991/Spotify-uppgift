@@ -221,7 +221,7 @@
                 "id": "d5f5822b-2ff1-466d-bba4-662fd0bdfaa8",
                 "exec": [
                   "pm.test(\"response must be valid and have a body\", function () {\r",
-                  "     pm.response.to.be.ok;\r",
+                  "     pm.response.to.be.created;\r",
                   "     pm.response.to.be.withBody;\r",
                   "     pm.response.to.be.json;\r",
                   "});"
@@ -379,7 +379,7 @@
   ],
   "variable": [
     {
-      "id": "6e83560e-63bb-4407-85fc-7587894e28bd",
+      "id": "fb3b1313-0965-459e-bc78-c6d214490057",
       "key": "variable_key",
       "value": ""
     }
