@@ -21,7 +21,7 @@
                   "});\r",
                   "pm.test(\"Artist name\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.name).to.eql(Ed Sheeran);\r",
+                  "    pm.expect(jsonData.name).to.eql(\"Ed Sheeran\");\r",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -342,7 +342,7 @@
   ],
   "variable": [
     {
-      "id": "f4d624f0-6feb-46fb-8635-20535327da2f",
+      "id": "d667eabd-f8e2-45b7-b6c2-936827769ad6",
       "key": "variable_key",
       "value": ""
     }
