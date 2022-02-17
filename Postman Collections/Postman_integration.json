@@ -323,7 +323,7 @@
       ]
     },
     {
-      "name": "New Folder",
+      "name": "Test",
       "item": [],
       "id": "5844ca1e-0eab-48fd-b817-4adb0e887483"
     }
@@ -365,7 +365,7 @@
   ],
   "variable": [
     {
-      "id": "0f52b536-1b70-452b-872b-baefd250bea8",
+      "id": "5c560244-0700-4be2-a913-68f4911985f6",
       "key": "variable_key",
       "value": ""
     }
