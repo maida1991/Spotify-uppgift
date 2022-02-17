@@ -16,8 +16,8 @@
               "script": {
                 "id": "74493d03-ba6e-4493-8e3a-c4168f530d22",
                 "exec": [
-                  "pm.test(\"Status code is 201\", function () {\r",
-                  "    pm.response.to.have.status(201);\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -340,7 +340,7 @@
   ],
   "variable": [
     {
-      "id": "f23c9da3-c628-480b-8ff8-eaa879078013",
+      "id": "bbe1eb09-1a72-45b7-8e55-06012ff9814a",
       "key": "variable_key",
       "value": ""
     }
