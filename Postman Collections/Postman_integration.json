@@ -62,6 +62,19 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "96246cec-a805-4204-a383-20174c810d19",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "a79b5f70-aa18-40a2-bf1e-ddca0c10117c",
@@ -411,7 +424,7 @@
   ],
   "variable": [
     {
-      "id": "fddefac2-d8b5-4512-8569-550895f81722",
+      "id": "8bcab2da-7b86-4adb-8221-565172e0c65b",
       "key": "variable_key",
       "value": ""
     }
