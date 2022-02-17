@@ -102,7 +102,15 @@
                   "pm.test(\"Playlist name\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
                   "    pm.expect(jsonData.name).to.eql(\"Maida Demo1\");\r",
-                  "});"
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Playlist is empty\",\r",
+                  "function () {\r",
+                  "    var jsonData = pm\r",
+                  "    response.json ();\r",
+                  "    pm.expect (jsonData.playlist).to.eql(\"empty\");\r",
+                  "\r",
+                  "})"
                 ],
                 "type": "text/javascript"
               }
@@ -127,7 +135,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n}",
+              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false,\r\n  \"playlist\": \"Empty\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -387,7 +395,7 @@
   ],
   "variable": [
     {
-      "id": "f005acf2-473b-45a9-be97-e44e88f08c59",
+      "id": "c605e793-03b0-4563-b22a-a6beb76792e1",
       "key": "variable_key",
       "value": ""
     }
