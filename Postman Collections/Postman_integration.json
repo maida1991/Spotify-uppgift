@@ -301,6 +301,15 @@
           "request": {
             "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
               "raw": "https://api.spotify.com/v1/playlists/:playlist /tracks?uris=spotify:track:09vXjJold20F5wlf0uvYtX",
               "protocol": "https",
@@ -324,7 +333,7 @@
               "variable": [
                 {
                   "key": "playlist ",
-                  "value": "7w4JnfnQLb07gNd0hrNdLL"
+                  "value": "0fJseZhb685KvGQM0iHKds"
                 }
               ]
             }
@@ -402,7 +411,7 @@
   ],
   "variable": [
     {
-      "id": "abd94440-cd19-4305-add6-a7c23ac118d7",
+      "id": "fddefac2-d8b5-4512-8569-550895f81722",
       "key": "variable_key",
       "value": ""
     }
