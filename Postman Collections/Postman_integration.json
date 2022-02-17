@@ -202,7 +202,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Dino, Vanna\",\r\n  \"description\": \"New songs on my playlist\",\r\n  \"public\": false\r\n}",
+              "raw": "",
               "options": {
                 "raw": {
                   "language": "json"
@@ -399,7 +399,7 @@
   ],
   "variable": [
     {
-      "id": "aadf4254-9520-4597-994f-f91a30e9d53b",
+      "id": "cf9f069d-da4e-4b0a-9266-7eb6e5af86bb",
       "key": "variable_key",
       "value": ""
     }
