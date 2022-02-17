@@ -220,7 +220,11 @@
               "script": {
                 "id": "d5f5822b-2ff1-466d-bba4-662fd0bdfaa8",
                 "exec": [
-                  ""
+                  "pm.test(\"response must be valid and have a body\", function () {\r",
+                  "     pm.response.to.be.ok;\r",
+                  "     pm.response.to.be.withBody;\r",
+                  "     pm.response.to.be.json;\r",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -375,7 +379,7 @@
   ],
   "variable": [
     {
-      "id": "34b1ab7e-ba05-46f0-b616-47f44dea3e7d",
+      "id": "6e83560e-63bb-4407-85fc-7587894e28bd",
       "key": "variable_key",
       "value": ""
     }
