@@ -22,10 +22,7 @@
                   "pm.test(\"Response time is less than 600ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(600);\r",
                   "});\r",
-                  "pm.test(\"Artist name\", function () {\r",
-                  "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.spotify).to.eql(\"Ed Sheeran\");\r",
-                  "});\r",
+                  "\r",
                   ""
                 ],
                 "type": "text/javascript"
@@ -378,7 +375,7 @@
   ],
   "variable": [
     {
-      "id": "4e1b428f-9e5a-4720-8399-91e03e9917be",
+      "id": "34b1ab7e-ba05-46f0-b616-47f44dea3e7d",
       "key": "variable_key",
       "value": ""
     }
