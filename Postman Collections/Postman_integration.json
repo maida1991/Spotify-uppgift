@@ -108,9 +108,13 @@
                   "function () {\r",
                   "    var jsonData = pm\r",
                   "    response.json ();\r",
-                  "    pm.expect (jsonData.playlist).to.eql(\"empty\");\r",
+                  "    pm.expect (jsonData.total).to.eql(0);\r",
+                  "})\r",
                   "\r",
-                  "})"
+                  "pm.test(\"Playlists owner name\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"Maida.poljak\");\r",
+                  "});\r",
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -135,7 +139,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false,\r\n  \"playlist\": \"Empty\"\r\n}",
+              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -395,7 +399,7 @@
   ],
   "variable": [
     {
-      "id": "c605e793-03b0-4563-b22a-a6beb76792e1",
+      "id": "aadf4254-9520-4597-994f-f91a30e9d53b",
       "key": "variable_key",
       "value": ""
     }
