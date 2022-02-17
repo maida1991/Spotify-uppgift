@@ -1,0 +1,372 @@
+{
+  "info": {
+    "_postman_id": "e1f71916-02e9-4d4d-b2f9-2695dd23fb7d",
+    "name": "Spotify",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Browse API",
+      "item": [
+        {
+          "name": "New Folder",
+          "item": [],
+          "_postman_id": "b67a14f7-4fe6-45f6-9e69-0d59d0404791",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "b7314190-a391-48b9-8f80-dd97fec37508",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "0e1a4e52-28e1-4340-b8b5-80e98abd785f",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.environment.get(\"Spotify\");"
+                ]
+              }
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "74493d03-ba6e-4493-8e3a-c4168f530d22",
+                "exec": [
+                  "pm.environment.get(\"Spotify\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "80b84873-748c-459a-837f-743a4e45e63f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
+              "protocol": "https",
+              "host": [
+                "api",
+                "spotify",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "browse",
+                "new-releases"
+              ],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "a79b5f70-aa18-40a2-bf1e-ddca0c10117c",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "77b8c3f4-617a-4846-b9eb-33a15d485f8d",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "5eeacd12-f017-48eb-9ac2-6dc697a4fee8",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "New Playlists",
+      "item": [
+        {
+          "name": "New Request",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "7610e890-d8b9-4397-aa4c-c2726a18253b",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "3b226f55-dcc0-4d09-bfd8-59660ac1c835",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.spotify.com/v1/users/{{user_id}}/playlists",
+              "protocol": "https",
+              "host": [
+                "api",
+                "spotify",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "users",
+                "{{user_id}}",
+                "playlists"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add album1",
+          "_postman_id": "f4b09346-755b-43d4-b98d-61c9b5798615",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://api.spotify.com/v1/playlists/{{playlist_id}}/tracks?uris=spotify:track:1HI6zseO8LvOaJMQlU3b2f",
+              "protocol": "https",
+              "host": [
+                "api",
+                "spotify",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "playlists",
+                "{{playlist_id}}",
+                "tracks"
+              ],
+              "query": [
+                {
+                  "key": "uris",
+                  "value": "spotify:track:1HI6zseO8LvOaJMQlU3b2f"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add album2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "d5f5822b-2ff1-466d-bba4-662fd0bdfaa8",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "ebdbe326-aaff-40f3-be00-606e8ff87f44",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://api.spotify.com/v1/playlists/:playlist /tracks?uris=spotify:track:3hDPeWgfRSHX1Q3a1CLaB5",
+              "protocol": "https",
+              "host": [
+                "api",
+                "spotify",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "playlists",
+                ":playlist ",
+                "tracks"
+              ],
+              "query": [
+                {
+                  "key": "uris",
+                  "value": "spotify:track:3hDPeWgfRSHX1Q3a1CLaB5"
+                },
+                {
+                  "key": "uris",
+                  "value": "",
+                  "disabled": true
+                }
+              ],
+              "variable": [
+                {
+                  "key": "playlist ",
+                  "value": "7w4JnfnQLb07gNd0hrNdLL",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add album3",
+          "_postman_id": "3bd3fb5c-6202-41d3-bc0e-5a09fca16723",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://api.spotify.com/v1/playlists/:playlist /tracks?uris=spotify:track:09vXjJold20F5wlf0uvYtX",
+              "protocol": "https",
+              "host": [
+                "api",
+                "spotify",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "playlists",
+                ":playlist ",
+                "tracks"
+              ],
+              "query": [
+                {
+                  "key": "uris",
+                  "value": "spotify:track:09vXjJold20F5wlf0uvYtX"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "playlist ",
+                  "value": "7w4JnfnQLb07gNd0hrNdLL",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "ff1b80e1-79e6-4bbe-aa5f-806247b8d0d7",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "86bfae8d-774e-4695-91ab-c757b975dc78",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "90cad9b4-8935-4290-9169-bc7e7b4417c6",
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Successful POST request\", function () {",
+              "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": {
+      "clientSecret": "826d7d9849e247f6aa0162e4d3457e2a",
+      "clientId": "f3406d8fc77c420c9417ced55b38961e",
+      "useBrowser": false,
+      "authUrl": "https://accounts.spotify.com/authorize",
+      "accessTokenUrl": "https://accounts.spotify.com/api/token",
+      "scope": "playlist-modify-public playlist-read-private playlist-modify-private",
+      "redirect_uri": "https://oauth.pstmn.io/v1/browser-callback",
+      "addTokenTo": "header"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "ce4e8427-8c02-49ee-b4b9-8839241d2860",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "d55b6e34-69bd-4d25-8a93-ee2fb0aa1c4f",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "e7fa5dbe-21df-4f95-aed0-fcf86bebe0b0",
+      "key": "variable_key",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
