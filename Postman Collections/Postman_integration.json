@@ -162,7 +162,10 @@
               "script": {
                 "id": "d6ccea18-21a2-4342-9316-44f9a52fbb76",
                 "exec": [
-                  ""
+                  "pm.test(\"Your test name\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.name).to.eql(\"Dino, Vanna\");\r",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -371,7 +374,7 @@
   ],
   "variable": [
     {
-      "id": "45d3ef61-e95c-407b-8e33-909b302cca19",
+      "id": "149f1ec0-13f7-4674-b13c-c5073d082d1d",
       "key": "variable_key",
       "value": ""
     }
