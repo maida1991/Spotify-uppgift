@@ -11,7 +11,7 @@
         {
           "name": "New Folder",
           "item": [],
-          "_postman_id": "b67a14f7-4fe6-45f6-9e69-0d59d0404791",
+          "id": "b67a14f7-4fe6-45f6-9e69-0d59d0404791",
           "event": [
             {
               "listen": "prerequest",
@@ -33,8 +33,7 @@
                 ]
               }
             }
-          ],
-          "_postman_isSubFolder": true
+          ]
         },
         {
           "name": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
@@ -50,7 +49,7 @@
               }
             }
           ],
-          "_postman_id": "80b84873-748c-459a-837f-743a4e45e63f",
+          "id": "80b84873-748c-459a-837f-743a4e45e63f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -85,7 +84,7 @@
           "response": []
         }
       ],
-      "_postman_id": "a79b5f70-aa18-40a2-bf1e-ddca0c10117c",
+      "id": "a79b5f70-aa18-40a2-bf1e-ddca0c10117c",
       "event": [
         {
           "listen": "prerequest",
@@ -126,7 +125,7 @@
               }
             }
           ],
-          "_postman_id": "3b226f55-dcc0-4d09-bfd8-59660ac1c835",
+          "id": "3b226f55-dcc0-4d09-bfd8-59660ac1c835",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -170,7 +169,7 @@
         },
         {
           "name": "Add album1",
-          "_postman_id": "f4b09346-755b-43d4-b98d-61c9b5798615",
+          "id": "f4b09346-755b-43d4-b98d-61c9b5798615",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -215,7 +214,7 @@
               }
             }
           ],
-          "_postman_id": "ebdbe326-aaff-40f3-be00-606e8ff87f44",
+          "id": "ebdbe326-aaff-40f3-be00-606e8ff87f44",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -250,8 +249,7 @@
               "variable": [
                 {
                   "key": "playlist ",
-                  "value": "7w4JnfnQLb07gNd0hrNdLL",
-                  "type": "string"
+                  "value": "7w4JnfnQLb07gNd0hrNdLL"
                 }
               ]
             }
@@ -260,7 +258,7 @@
         },
         {
           "name": "Add album3",
-          "_postman_id": "3bd3fb5c-6202-41d3-bc0e-5a09fca16723",
+          "id": "3bd3fb5c-6202-41d3-bc0e-5a09fca16723",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -290,8 +288,7 @@
               "variable": [
                 {
                   "key": "playlist ",
-                  "value": "7w4JnfnQLb07gNd0hrNdLL",
-                  "type": "string"
+                  "value": "7w4JnfnQLb07gNd0hrNdLL"
                 }
               ]
             }
@@ -299,7 +296,7 @@
           "response": []
         }
       ],
-      "_postman_id": "ff1b80e1-79e6-4bbe-aa5f-806247b8d0d7",
+      "id": "ff1b80e1-79e6-4bbe-aa5f-806247b8d0d7",
       "event": [
         {
           "listen": "prerequest",
@@ -324,6 +321,11 @@
           }
         }
       ]
+    },
+    {
+      "name": "New Folder",
+      "item": [],
+      "id": "5844ca1e-0eab-48fd-b817-4adb0e887483"
     }
   ],
   "auth": {
@@ -363,10 +365,9 @@
   ],
   "variable": [
     {
-      "id": "e7fa5dbe-21df-4f95-aed0-fcf86bebe0b0",
+      "id": "2170e5e8-9480-456e-9ae6-55015baa9c74",
       "key": "variable_key",
-      "value": "",
-      "type": "string"
+      "value": ""
     }
   ]
 }
