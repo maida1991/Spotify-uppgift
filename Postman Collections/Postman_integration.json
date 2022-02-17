@@ -65,6 +65,25 @@
         },
         {
           "name": "New Request",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f6082494-44d0-4df6-b5cf-756fe6ab5533",
+                "exec": [
+                  "pm.test(\"Your test name\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.total).to.eql(0);\r",
+                  "\r",
+                  "pm.test(\"Body is correct\", function () {\r",
+                  "    pm.response.to.have.body(\"0\");\r",
+                  "});\r",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "96246cec-a805-4204-a383-20174c810d19",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -72,7 +91,11 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://api.spotify.com/v1/users/{{user_id}}"
           },
           "response": []
         }
@@ -424,7 +447,7 @@
   ],
   "variable": [
     {
-      "id": "18290205-c01d-43bf-84a4-748da0c4f616",
+      "id": "cb6b92d8-39ba-44df-ab78-5f17d88bd99f",
       "key": "variable_key",
       "value": ""
     }
