@@ -9,47 +9,6 @@
       "name": "Browse API",
       "item": [
         {
-          "name": "New Folder",
-          "item": [
-            {
-              "name": "New Request",
-              "id": "41b83441-8816-42f8-825b-4d78bde8c699",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": null
-              },
-              "response": []
-            }
-          ],
-          "id": "b67a14f7-4fe6-45f6-9e69-0d59d0404791",
-          "event": [
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "b7314190-a391-48b9-8f80-dd97fec37508",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            },
-            {
-              "listen": "test",
-              "script": {
-                "id": "0e1a4e52-28e1-4340-b8b5-80e98abd785f",
-                "type": "text/javascript",
-                "exec": [
-                  "pm.environment.get(\"Spotify\");"
-                ]
-              }
-            }
-          ]
-        },
-        {
           "name": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
           "event": [
             {
@@ -379,7 +338,7 @@
   ],
   "variable": [
     {
-      "id": "fc126d00-8dd7-4076-bfa3-5e270458638b",
+      "id": "b0a5fb77-a612-4c22-831d-7553cfe7d9bd",
       "key": "variable_key",
       "value": ""
     }
