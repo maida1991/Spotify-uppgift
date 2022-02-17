@@ -16,8 +16,8 @@
               "script": {
                 "id": "74493d03-ba6e-4493-8e3a-c4168f530d22",
                 "exec": [
-                  "pm.test(\"Status code is 401\", function () {\r",
-                  "    pm.response.to.have.status(401);\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
                   "});\r",
                   "pm.test(\"Response time is less than 600ms\", function () {\r",
                   "    pm.expect(pm.response.responseTime).to.be.below(600);\r",
@@ -387,7 +387,7 @@
   ],
   "variable": [
     {
-      "id": "75de1c75-fa4b-4477-85f7-8beaf536484b",
+      "id": "451e1160-a259-49fa-be98-c5626b9f4c15",
       "key": "variable_key",
       "value": ""
     }
