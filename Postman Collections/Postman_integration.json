@@ -276,7 +276,7 @@
         {
           "listen": "prerequest",
           "script": {
-            "id": "86bfae8d-774e-4695-91ab-c757b975dc78",
+            "id": "44d9833e-e4fc-4f87-824f-2369fe7ed925",
             "type": "text/javascript",
             "exec": [
               ""
@@ -286,12 +286,10 @@
         {
           "listen": "test",
           "script": {
-            "id": "90cad9b4-8935-4290-9169-bc7e7b4417c6",
+            "id": "2adec214-9011-4eee-a950-9ebbf5ff6ac9",
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"Successful POST request\", function () {",
-              "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-              "});"
+              ""
             ]
           }
         }
@@ -340,7 +338,7 @@
   ],
   "variable": [
     {
-      "id": "bbe1eb09-1a72-45b7-8e55-06012ff9814a",
+      "id": "cf21626a-4998-47b4-b726-7c7d11c34d6d",
       "key": "variable_key",
       "value": ""
     }
