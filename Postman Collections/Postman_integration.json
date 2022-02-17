@@ -162,9 +162,8 @@
               "script": {
                 "id": "d6ccea18-21a2-4342-9316-44f9a52fbb76",
                 "exec": [
-                  "pm.test(\"Your test name\", function () {\r",
-                  "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.name).to.eql(\"Dino, Vanna\");\r",
+                  "pm.test(\"Status code is 201\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -374,7 +373,7 @@
   ],
   "variable": [
     {
-      "id": "149f1ec0-13f7-4674-b13c-c5073d082d1d",
+      "id": "cf3133df-5b0a-41c7-b3ea-b81c9e5f6f0f",
       "key": "variable_key",
       "value": ""
     }
