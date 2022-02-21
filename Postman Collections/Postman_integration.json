@@ -138,6 +138,10 @@
               "script": {
                 "id": "7610e890-d8b9-4397-aa4c-c2726a18253b",
                 "exec": [
+                  "pm.test(\"Playlists owner name\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"Maida.poljak\");\r",
+                  "});\r",
+                  "\r",
                   "pm.test(\"Playlist name\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
                   "    pm.expect(jsonData.name).to.eql(\"Maida Demo1\");\r",
@@ -150,9 +154,6 @@
                   "    pm.expect (jsonData.total).to.eql(0);\r",
                   "})\r",
                   "\r",
-                  "pm.test(\"Playlists owner name\", function () {\r",
-                  "    pm.expect(pm.response.text()).to.include(\"Maida.poljak\");\r",
-                  "});\r",
                   ""
                 ],
                 "type": "text/javascript"
@@ -163,7 +164,7 @@
               "script": {
                 "id": "31889a2b-d08e-4033-bb1a-1e7b17af3ef8",
                 "exec": [
-                  ""
+                  "pm.environment.get(\"variable_key\");"
                 ],
                 "type": "text/javascript"
               }
@@ -178,7 +179,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n}",
+              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n  \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -450,7 +451,7 @@
   ],
   "variable": [
     {
-      "id": "a0324e01-7f38-4bd3-887e-2c954c388029",
+      "id": "ea2381d1-a4f6-4168-9ef4-977aeb49338b",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
