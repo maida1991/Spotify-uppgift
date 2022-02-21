@@ -443,7 +443,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "https://api.spotify.com/v1/me/player/recently-played"
           },
           "response": []
         }
@@ -515,7 +515,7 @@
   ],
   "variable": [
     {
-      "id": "a2af8577-3ea2-4c29-859e-9bf0da0d8a2e",
+      "id": "0f8cc1b6-8c5f-4a21-b2c0-6956f5543db3",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
