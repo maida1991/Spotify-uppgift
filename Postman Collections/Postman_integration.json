@@ -413,7 +413,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Update Playlist Items",
           "id": "d5880e76-8407-40ce-b22f-2ff52328a0c8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -493,7 +493,7 @@
   ],
   "variable": [
     {
-      "id": "f802e99a-4d60-441d-8234-0fad6f5098f9",
+      "id": "a627cf24-107f-4a45-9c31-a94ede6a60ca",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
