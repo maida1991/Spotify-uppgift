@@ -98,17 +98,17 @@
         {
           "listen": "prerequest",
           "script": {
-            "id": "77b8c3f4-617a-4846-b9eb-33a15d485f8d",
+            "id": "1534fefc-c9df-454d-bdef-7a2f0578c597",
             "type": "text/javascript",
             "exec": [
-              ""
+              "pm.environment.get(\"variable_key\");"
             ]
           }
         },
         {
           "listen": "test",
           "script": {
-            "id": "5eeacd12-f017-48eb-9ac2-6dc697a4fee8",
+            "id": "016fb55f-0cb5-4764-9538-692d0ca28eb3",
             "type": "text/javascript",
             "exec": [
               ""
@@ -440,7 +440,7 @@
   ],
   "variable": [
     {
-      "id": "9fa424ea-db7f-4b80-9d94-683c04f8437c",
+      "id": "98f19dd8-e72a-4cbf-b812-71062660a88c",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
