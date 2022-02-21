@@ -298,6 +298,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "931034cf-36c3-4147-9ad3-348f70b02926",
+                "exec": [
+                  "pm.environment.get(\"variable_key\");"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "id": "ebdbe326-aaff-40f3-be00-606e8ff87f44",
@@ -461,7 +471,7 @@
   ],
   "variable": [
     {
-      "id": "e4fb0fd2-d47a-42ac-8fe7-9e6f41e7c32d",
+      "id": "20e1b7bf-3a1c-4335-a202-06eb213407f7",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
