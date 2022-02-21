@@ -74,7 +74,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Playlist",
           "event": [
             {
               "listen": "test",
@@ -502,7 +502,7 @@
   ],
   "variable": [
     {
-      "id": "ca4b273c-28d5-4504-8698-34c3dc1bb20d",
+      "id": "64fe484c-12b6-4874-82d7-358460ab50d5",
       "key": "variable_key",
       "value": "BQC2r2ukIP57FBuAjNIdRTwf9uib2M6IiFLJTEPFcTRtDjSlCiGhCc3ujRXA_82LYCX8MWF3qWzk1KEkTgBrOOO3y6pJEYN4kNEhgG0C9_2fLtnGdL5H4OiCsNAnQI5xXTbrDO27ttS250m06ICpktmEU_lQ85ujcdJYpkXx4cXAxeWyN6C-7Ez7u1E7B0QX9PcmT6mvyanA4Gh4RNCKECUBM01zmpbEcWhW2HSk-Q\n"
     }
