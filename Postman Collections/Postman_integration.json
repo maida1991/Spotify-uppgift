@@ -453,17 +453,36 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "7419849b-db2f-421a-a514-8172b2bbbbce",
+        "id": "804816c0-2acb-4257-9deb-08dad7cf1540",
         "type": "text/javascript",
         "exec": [
-          ""
+          "pm.sendRequest({",
+          "    url: pm.environment.get(\"url\")+\"/auth/v1/token\",",
+          "    method: 'POST',",
+          "    header: {",
+          "        'Accept': 'application/json',",
+          "        'Content-Type': 'application/x-www-form-urlencoded'",
+          "    },",
+          "    body: {",
+          "        mode: 'urlencoded',",
+          "        urlencoded: [",
+          "            {key: 'username', value: pm.globals.get(\"UNAME\")},",
+          "            {key: 'password', value: pm.globals.get(\"PASS\")}",
+          "        ]",
+          "    }",
+          "},",
+          "    (err, res) => {",
+          "        // Set BEARERTOKEN",
+          "        pm.globals.set(\"BEARERTOKEN\", res.json().access_token)",
+          "        // console.log(res.json());",
+          "});"
         ]
       }
     },
     {
       "listen": "test",
       "script": {
-        "id": "951adbfc-b15f-4632-9b80-14263a7cb680",
+        "id": "4fc4cfd3-f9e7-4d07-907a-55612f9490c4",
         "type": "text/javascript",
         "exec": [
           ""
@@ -473,7 +492,7 @@
   ],
   "variable": [
     {
-      "id": "dc5d9f86-bdeb-424a-855f-f6d8a68aefa3",
+      "id": "97107776-128b-4a9c-be8a-357ba70cb7f4",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
