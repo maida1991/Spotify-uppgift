@@ -304,7 +304,7 @@
               "script": {
                 "id": "931034cf-36c3-4147-9ad3-348f70b02926",
                 "exec": [
-                  "pm.environment.get(\"variable_key\");"
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -483,7 +483,7 @@
   ],
   "variable": [
     {
-      "id": "b5297c6d-2365-40ac-99ff-1c3c0570a378",
+      "id": "94b54997-0133-46a5-a1ad-fd95bc5b9081",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
