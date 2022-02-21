@@ -419,9 +419,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"range_start\": 1,\r\n  \"insert_before\": 3,\r\n  \"range_length\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://api.spotify.com/v1/playlists/{{playlist_id}}/tracks"
           },
           "response": []
         }
@@ -493,7 +502,7 @@
   ],
   "variable": [
     {
-      "id": "933af679-a73a-4314-ad99-6ff92f586271",
+      "id": "ca4b273c-28d5-4504-8698-34c3dc1bb20d",
       "key": "variable_key",
       "value": "BQC2r2ukIP57FBuAjNIdRTwf9uib2M6IiFLJTEPFcTRtDjSlCiGhCc3ujRXA_82LYCX8MWF3qWzk1KEkTgBrOOO3y6pJEYN4kNEhgG0C9_2fLtnGdL5H4OiCsNAnQI5xXTbrDO27ttS250m06ICpktmEU_lQ85ujcdJYpkXx4cXAxeWyN6C-7Ez7u1E7B0QX9PcmT6mvyanA4Gh4RNCKECUBM01zmpbEcWhW2HSk-Q\n"
     }
