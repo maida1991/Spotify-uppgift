@@ -411,6 +411,19 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "d5880e76-8407-40ce-b22f-2ff52328a0c8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "ff1b80e1-79e6-4bbe-aa5f-806247b8d0d7",
@@ -480,7 +493,7 @@
   ],
   "variable": [
     {
-      "id": "ef00ec4b-2a36-45bd-9bae-2f7dae3300d9",
+      "id": "62d83fbe-979c-48a6-a071-f169cfd63dfc",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
