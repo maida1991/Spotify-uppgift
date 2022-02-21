@@ -354,6 +354,18 @@
         },
         {
           "name": "Add album3",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "72f18b5b-5413-40ba-97ff-4844e5d16d0d",
+                "exec": [
+                  "pm.environment.get(\"variable_key\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "3bd3fb5c-6202-41d3-bc0e-5a09fca16723",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -471,7 +483,7 @@
   ],
   "variable": [
     {
-      "id": "20e1b7bf-3a1c-4335-a202-06eb213407f7",
+      "id": "14b2ab12-45a4-4cbd-9974-519f10c5297e",
       "key": "variable_key",
       "value": "BQBD1dUatMgj6xp9hcU1TeHQSlSRxj57f7-Xoe9aagp4L11MvnOSpiYmNCz3U0AvybdAWolwQJS8iUqDGkoP1nBQ8Re7-6En_CqPaAbN3kuYgdC19SKX5tpBUD4ouEvWTAqq8c4TKeExwR45w3zakpf6lc47x8tVb98RKxiW7pAli-FBEXpjYQ1f1MlwRTNhQ6WtQtULc-x6_rbRK8-pTtZNSuxpYZaJZg2Fma6VUw"
     }
