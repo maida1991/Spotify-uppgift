@@ -101,6 +101,19 @@
             "url": "https://api.spotify.com/v1/users/{{user_id}}"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "d76c2c45-917d-4446-b0b5-2719614e3059",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "a79b5f70-aa18-40a2-bf1e-ddca0c10117c",
@@ -515,7 +528,7 @@
   ],
   "variable": [
     {
-      "id": "d5ccafb2-50f2-4791-b7cc-d30dbb131c78",
+      "id": "005d71ea-6993-4127-8d9c-5b44d421708a",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
