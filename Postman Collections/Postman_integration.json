@@ -103,7 +103,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Get album",
           "id": "d76c2c45-917d-4446-b0b5-2719614e3059",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -528,7 +528,7 @@
   ],
   "variable": [
     {
-      "id": "7ee41242-17c9-451d-99fe-16c575ccedff",
+      "id": "021e3deb-d562-498d-a43a-b573669409ba",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
