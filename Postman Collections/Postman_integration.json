@@ -303,22 +303,34 @@
               "script": {
                 "id": "7610e890-d8b9-4397-aa4c-c2726a18253b",
                 "exec": [
+                  "pm.globals.set(\"authorization\", \"BQDJ6j_bGoKRuYDGwv5hdSOcVLbYouFncuMYbutklqJe6WjLPJQTVmiS8JbtH_kjC2i5HRJLQ4QI8kGVzYgKLzZIzM3Id3hruZzvccrbfINGMS_8yWyVm6ktIXedQ9sfZ6YVfUE41Ghyoa7C1ccU64JsiKj4EJT-9gn8ujZ8H7II9osKln12SqCT7ZsWypr0SruA8S5Yr8plWw0q-17qSBO-a9OpxsEV9zAXeGukrR1QOQ\");\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Successful POST request\", function () {\r",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+                  "});\r",
+                  "\r",
                   "pm.test(\"Playlists owner name\", function () {\r",
                   "    pm.expect(pm.response.text()).to.include(\"Maida.poljak\");\r",
                   "});\r",
                   "\r",
                   "pm.test(\"Playlist name\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.name).to.eql(\"Maida Demo1\");\r",
+                  "    pm.expect(jsonData.name).to.eql(\"Spotify playlist\");\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Playlist is empty\",\r",
-                  "function () {\r",
-                  "    var jsonData = \"total\"\r",
-                  "    response.json ();\r",
-                  "    pm.expect (jsonData.total).to.eql(\"0\");\r",
-                  "})\r",
+                  "pm.test(\"Playlist is empty\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.limit).to.eql(\"100\");\r",
                   "\r",
+                  "});    \r",
+                  "\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"Playlists description is correct\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.description).to.eql(\"New playlist demo\");\r",
+                  "});\r",
                   "\r",
                   ""
                 ],
@@ -345,7 +357,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Maida Demo1\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n  \r\n}",
+              "raw": "{\r\n  \"name\": \"Spotify playlist\",\r\n  \"description\": \"New playlist demo\",\r\n  \"public\": false\r\n  \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -663,7 +675,7 @@
   ],
   "variable": [
     {
-      "id": "3e1ba80c-3798-4d4b-af10-68873679eebc",
+      "id": "c63a33f7-88a0-4504-a8a8-23d089f88dc1",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
