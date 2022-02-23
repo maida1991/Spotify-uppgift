@@ -356,7 +356,7 @@
             "auth": {
               "type": "bearer",
               "bearer": {
-                "token": "BQBLhkAvHVMIS3MJHgQIA8txruvyguHpzXohlvKVbYHyhrCZUjC_4Q99u5d7q02oVOvvo8Jj8KMi2CCVSdf5-ORrXJScuSBAJ_NpEes7xPuwZHcZq_phpMZcQptexsZvT_bAo6sV8_C0wKIEAdYNEwLziYpbarWaj4SvCpRHw3orZii1E_SquoLfzOfsex5yPzRcah3W8PLxTGI8_RZbo7LX3KMKBPFjc3mcS3d3wQ\n"
+                "token": "BQB6VqmejTI_EFZGkv_UuY7_ZW9aQ60svIkXnlAvLX88Gvg0w-61tDgIkD6Jtjwt0MEzM15xvn_n_e8WNZEqrz6CDWQDdJxgXcsxavVJrvX_NXEecR44doFBCf54h5S0QKIQ_Y5hYPVKumaHg2_diNKfrO3Ml9Revqomt7L2TAsfXEQ5-zM07A9CUbYPn1ZWNJlUtRqNLRa0MDyyZneZBNCwlLR1OOFjzXey5vqFzhdcrw"
               }
             },
             "method": "POST",
@@ -681,7 +681,7 @@
   ],
   "variable": [
     {
-      "id": "6b1a1cb8-5271-4dc1-afcd-95f9deb207be",
+      "id": "aab08fb1-6532-4613-8290-15676f537aea",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
