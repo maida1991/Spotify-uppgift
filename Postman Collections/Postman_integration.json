@@ -204,49 +204,6 @@
             "url": null
           },
           "response": []
-        },
-        {
-          "name": "New Request",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "23662fea-fee9-4d09-bb34-d9599bd0f257",
-                "exec": [
-                  "tests[\"Status code is 201\"] = (responseCode.code === 201);\r",
-                  "\r",
-                  "if (responseCode.code === 201) {\r",
-                  "    var playlist = JSON.parse(responseBody);\r",
-                  "\r",
-                  "    // Store the playlist id in the environment to add tracks in the future\r",
-                  "    postman.setEnvironmentVariable(\"playlist_id\", playlist.id);\r",
-                  "    postman.setNextRequest(\"Get Artist Top Tracks\");\r",
-                  "    console.log(\"Created playlist: \" + environment.artist_name + \" Mix\");\r",
-                  "}"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "31a7406b-4ba7-421f-9964-b7aa8aa1b07b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"{{artist_name}} Mix\",\r\n  \"public\": false\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "https://api.spotify.com/v1/artists/{{artistID}}/related-artists"
-          },
-          "response": []
         }
       ],
       "id": "a79b5f70-aa18-40a2-bf1e-ddca0c10117c",
@@ -662,7 +619,7 @@
   ],
   "variable": [
     {
-      "id": "9303824c-0dea-48ea-926e-0ad405645cb6",
+      "id": "a4f3e1a9-ea25-4268-b760-875fec6a1255",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
