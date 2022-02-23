@@ -157,14 +157,27 @@
         },
         {
           "name": "New Request",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "205c1877-61ae-4475-b657-3117cfd5ec39",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "0b31e86a-d55d-4cbb-bd19-015f07af6e86",
           "protocolProfileBehavior": {
-            "disableBodyPruning": true
+            "disableBodyPruning": true,
+            "disabledSystemHeaders": {}
           },
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "https://api.spotify.com/v1/artists/{{artistID}}"
           },
           "response": []
         }
@@ -582,7 +595,7 @@
   ],
   "variable": [
     {
-      "id": "60101e2e-9289-421b-aa59-5d2105d1be9f",
+      "id": "0440e4b6-7419-4935-a8c0-b23c0a08c6d1",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
