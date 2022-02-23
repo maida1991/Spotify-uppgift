@@ -9,71 +9,6 @@
       "name": "Browse API",
       "item": [
         {
-          "name": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "74493d03-ba6e-4493-8e3a-c4168f530d22",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
-                  "});\r",
-                  "pm.test(\"Response time is less than 600ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(600);\r",
-                  "});\r",
-                  "\r",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            },
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "c8460fb7-7aab-4887-b5ec-6ee6f7f6871c",
-                "exec": [
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "80b84873-748c-459a-837f-743a4e45e63f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
-              "protocol": "https",
-              "host": [
-                "api",
-                "spotify",
-                "com"
-              ],
-              "path": [
-                "v1",
-                "browse",
-                "new-releases"
-              ],
-              "query": [
-                {
-                  "key": "offset",
-                  "value": "0"
-                },
-                {
-                  "key": "limit",
-                  "value": "20"
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
           "name": "Get Auth Key",
           "event": [
             {
@@ -174,6 +109,71 @@
               "raw": ""
             },
             "url": "https://api.spotify.com/v1/users/{{user_id}}"
+          },
+          "response": []
+        },
+        {
+          "name": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "74493d03-ba6e-4493-8e3a-c4168f530d22",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "pm.test(\"Response time is less than 600ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(600);\r",
+                  "});\r",
+                  "\r",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "c8460fb7-7aab-4887-b5ec-6ee6f7f6871c",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "80b84873-748c-459a-837f-743a4e45e63f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
+              "protocol": "https",
+              "host": [
+                "api",
+                "spotify",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "browse",
+                "new-releases"
+              ],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
           },
           "response": []
         },
@@ -694,7 +694,7 @@
   ],
   "variable": [
     {
-      "id": "0ca0d192-d237-40e0-b372-c2c8d101729b",
+      "id": "a76e5f40-a8b4-4a66-82c9-87e1815116f3",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
