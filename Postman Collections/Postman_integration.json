@@ -14,7 +14,7 @@
             {
               "listen": "test",
               "script": {
-                "type": "text/javascript",
+                "id": "1ee012b9-9545-4236-a091-c92779a519e1",
                 "exec": [
                   "tests[\"Status code is 200\"] = (responseCode.code === 200);",
                   "",
@@ -33,13 +33,13 @@
                   "    }",
                   "}"
                 ],
-                "id": "1ee012b9-9545-4236-a091-c92779a519e1"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "prerequest",
               "script": {
-                "type": "text/javascript",
+                "id": "71e33530-2bea-47e9-b9f4-8e267fb6ef2d",
                 "exec": [
                   "var client_credentials = (environment.client_id + ':' + environment.client_secret).encodeBase64();",
                   "postman.setEnvironmentVariable(\"client_credentials\", client_credentials);",
@@ -48,7 +48,7 @@
                   "var environmentObjClone = _.cloneDeep(environment);",
                   "postman.setEnvironmentVariable(\"cloned_environment\", JSON.stringify(environmentObjClone));"
                 ],
-                "id": "71e33530-2bea-47e9-b9f4-8e267fb6ef2d"
+                "type": "text/javascript"
               }
             }
           ],
@@ -74,7 +74,7 @@
                 },
                 {
                   "key": "refresh_token",
-                  "value": "{{refresh_token}}",
+                  "value": "{{authorization}}",
                   "type": "text"
                 }
               ]
@@ -689,7 +689,7 @@
   ],
   "variable": [
     {
-      "id": "413d3aa9-bf4b-4f55-b908-79b6c5e6cf23",
+      "id": "b0fa2821-2bf0-43ba-a0b8-30d7124ae359",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
