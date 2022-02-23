@@ -163,7 +163,18 @@
               "script": {
                 "id": "205c1877-61ae-4475-b657-3117cfd5ec39",
                 "exec": [
-                  ""
+                  "tests[\"Status code is 200\"] = (responseCode.code === 200);\r",
+                  "\r",
+                  "if (responseCode.code === 200) {\r",
+                  "    var artist = JSON.parse(responseBody);\r",
+                  "    // Store the artist name in the environment\r",
+                  "    postman.setEnvironmentVariable(\"artist_name\", artist.name);\r",
+                  "    // Store the artist id in an artists array\r",
+                  "    postman.setEnvironmentVariable(\"artists\", JSON.stringify([environment.id]));\r",
+                  "    // As defined in the workflow, set the next request to be executed to Get Related Artists\r",
+                  "    postman.setNextRequest(\"Get Related Artists\");\r",
+                  "    console.log(\"Information retrieved for artist: \" + environment.artist_name);\r",
+                  "}"
                 ],
                 "type": "text/javascript"
               }
@@ -595,7 +606,7 @@
   ],
   "variable": [
     {
-      "id": "c6c161cc-6a55-400f-86b2-852bc0b084c3",
+      "id": "24de2fc2-d90f-4af7-9b1d-0afc03d57bd8",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
