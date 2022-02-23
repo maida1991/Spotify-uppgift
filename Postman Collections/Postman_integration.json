@@ -301,11 +301,8 @@
             {
               "listen": "test",
               "script": {
-                "id": "7610e890-d8b9-4397-aa4c-c2726a18253b",
+                "id": "5452e2f2-50ed-465a-8bea-1f7ffd9ea3ab",
                 "exec": [
-                  "pm.globals.set(\"authorization\", \"BQDJ6j_bGoKRuYDGwv5hdSOcVLbYouFncuMYbutklqJe6WjLPJQTVmiS8JbtH_kjC2i5HRJLQ4QI8kGVzYgKLzZIzM3Id3hruZzvccrbfINGMS_8yWyVm6ktIXedQ9sfZ6YVfUE41Ghyoa7C1ccU64JsiKj4EJT-9gn8ujZ8H7II9osKln12SqCT7ZsWypr0SruA8S5Yr8plWw0q-17qSBO-a9OpxsEV9zAXeGukrR1QOQ\");\r",
-                  "\r",
-                  "\r",
                   "pm.test(\"Successful POST request\", function () {\r",
                   "    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
                   "});\r",
@@ -326,11 +323,12 @@
                   "});    \r",
                   "\r",
                   "\r",
-                  "\r",
                   "pm.test(\"Playlists description is correct\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
                   "    pm.expect(jsonData.description).to.eql(\"New playlist demo\");\r",
                   "});\r",
+                  "\r",
+                  "\r",
                   "\r",
                   ""
                 ],
@@ -340,7 +338,7 @@
             {
               "listen": "prerequest",
               "script": {
-                "id": "31889a2b-d08e-4033-bb1a-1e7b17af3ef8",
+                "id": "f7d55a7f-92b6-4c75-935d-2d3d7f0e1327",
                 "exec": [
                   ""
                 ],
@@ -350,7 +348,9 @@
           ],
           "id": "3b226f55-dcc0-4d09-bfd8-59660ac1c835",
           "protocolProfileBehavior": {
-            "disableBodyPruning": true
+            "disableBodyPruning": true,
+            "followOriginalHttpMethod": true,
+            "followAuthorizationHeader": true
           },
           "request": {
             "method": "POST",
@@ -675,7 +675,7 @@
   ],
   "variable": [
     {
-      "id": "c63a33f7-88a0-4504-a8a8-23d089f88dc1",
+      "id": "0459e44b-9cef-4b61-9a02-5bb8f4358aed",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
