@@ -267,7 +267,7 @@
               }
             },
             "url": {
-              "raw": "https://api.spotify.com/v1/users/{{user_id}}/playlists",
+              "raw": "https://api.spotify.com/v1/users/{{user_id1}}/playlists",
               "protocol": "https",
               "host": [
                 "api",
@@ -277,7 +277,7 @@
               "path": [
                 "v1",
                 "users",
-                "{{user_id}}",
+                "{{user_id1}}",
                 "playlists"
               ],
               "query": [
@@ -595,7 +595,7 @@
   ],
   "variable": [
     {
-      "id": "0440e4b6-7419-4935-a8c0-b23c0a08c6d1",
+      "id": "059be070-130c-4f15-8c8f-005bcd9971f6",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
