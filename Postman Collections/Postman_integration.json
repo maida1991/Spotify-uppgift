@@ -346,7 +346,7 @@
               }
             }
           ],
-          "id": "3b226f55-dcc0-4d09-bfd8-59660ac1c835",
+          "id": "43978adb-8004-4308-a54c-be22a1ad11b9",
           "protocolProfileBehavior": {
             "disableBodyPruning": true,
             "followOriginalHttpMethod": true,
@@ -642,6 +642,19 @@
           }
         }
       ]
+    },
+    {
+      "name": "New Request",
+      "id": "ec99583e-ae72-4f12-8ff5-718fd1d40312",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": null
+      },
+      "response": []
     }
   ],
   "auth": {
@@ -681,7 +694,7 @@
   ],
   "variable": [
     {
-      "id": "aab08fb1-6532-4613-8290-15676f537aea",
+      "id": "53b34ac3-299b-4703-8923-1885039b8c8c",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
