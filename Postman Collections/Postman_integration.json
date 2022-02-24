@@ -318,7 +318,7 @@
                   "\r",
                   "pm.test(\"Playlist is empty\", function () {\r",
                   "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.limit).to.eql(\"100\");\r",
+                  "    pm.expect(jsonData.total).to.eql(\"0\");\r",
                   "\r",
                   "});    \r",
                   "\r",
@@ -340,7 +340,26 @@
               "script": {
                 "id": "f7d55a7f-92b6-4c75-935d-2d3d7f0e1327",
                 "exec": [
-                  ""
+                  "pm.sendRequest({\r",
+                  "    url: pm.environment.get(\"url\")+\"/auth/v1/token\",\r",
+                  "    method: 'POST',\r",
+                  "    header: {\r",
+                  "        'Accept': 'application/json',\r",
+                  "        'Content-Type': 'application/x-www-form-urlencoded'\r",
+                  "    },\r",
+                  "    body: {\r",
+                  "        mode: 'urlencoded',\r",
+                  "        urlencoded: [\r",
+                  "            {key: 'username', value: pm.globals.get(\"NAME\")},\r",
+                  "            {key: 'password', value: pm.globals.get(\"PASS\")}\r",
+                  "        ]\r",
+                  "    }\r",
+                  "},\r",
+                  "    (err, res) => {\r",
+                  "        // Set BEARERTOKEN\r",
+                  "        pm.globals.set(\"BEARERTOKEN\", res.json().access_token)\r",
+                  "        // console.log(res.json());\r",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -353,12 +372,6 @@
             "followAuthorizationHeader": true
           },
           "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "BQB6VqmejTI_EFZGkv_UuY7_ZW9aQ60svIkXnlAvLX88Gvg0w-61tDgIkD6Jtjwt0MEzM15xvn_n_e8WNZEqrz6CDWQDdJxgXcsxavVJrvX_NXEecR44doFBCf54h5S0QKIQ_Y5hYPVKumaHg2_diNKfrO3Ml9Revqomt7L2TAsfXEQ5-zM07A9CUbYPn1ZWNJlUtRqNLRa0MDyyZneZBNCwlLR1OOFjzXey5vqFzhdcrw"
-              }
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -694,7 +707,7 @@
   ],
   "variable": [
     {
-      "id": "53b34ac3-299b-4703-8923-1885039b8c8c",
+      "id": "69c24310-df00-4e09-8125-22026fe05e42",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
