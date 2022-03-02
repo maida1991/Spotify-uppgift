@@ -38,7 +38,7 @@
           "response": []
         },
         {
-          "name": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20",
+          "name": "New releases",
           "event": [
             {
               "listen": "test",
@@ -578,7 +578,7 @@
   ],
   "variable": [
     {
-      "id": "7fa34326-0df2-4835-8d75-989d907bb7e5",
+      "id": "1cc1d120-9032-4f4b-9862-ce5dc716b39e",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
