@@ -480,6 +480,18 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "b351bfe6-a00d-4a3d-8acb-6886d075f72a",
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "id": "3bd3fb5c-6202-41d3-bc0e-5a09fca16723",
@@ -591,7 +603,7 @@
   ],
   "variable": [
     {
-      "id": "f969243e-77a5-446f-9ac4-395e27581d93",
+      "id": "c7bed3f4-dd86-4455-84b7-3efb0a19f7e3",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
