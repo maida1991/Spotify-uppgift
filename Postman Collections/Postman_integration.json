@@ -165,16 +165,14 @@
                 "exec": [
                   "tests[\"Status code is 200\"] = (responseCode.code === 200);\r",
                   "\r",
-                  "if (responseCode.code === 200) {\r",
-                  "    var artist = JSON.parse(responseBody);\r",
-                  "    // Store the artist name in the environment\r",
-                  "    postman.setEnvironmentVariable(\"artist_name\", artist.name);\r",
-                  "    // Store the artist id in an artists array\r",
-                  "    postman.setEnvironmentVariable(\"artists\", JSON.stringify([environment.id]));\r",
-                  "    // As defined in the workflow, set the next request to be executed to Get Related Artists\r",
-                  "    postman.setNextRequest(\"Get Related Artists\");\r",
-                  "    console.log(\"Information retrieved for artist: \" + environment.artist_name);\r",
-                  "}"
+                  "pm.test(\"Artist name\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"Adele\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Artist popularity\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.popularity).to.eql(92);\r",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -580,7 +578,7 @@
   ],
   "variable": [
     {
-      "id": "bc5cd8b9-7187-4d92-b12c-646a85c21924",
+      "id": "7fa34326-0df2-4835-8d75-989d907bb7e5",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
