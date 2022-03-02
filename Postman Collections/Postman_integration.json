@@ -9,81 +9,6 @@
       "name": "Browse API",
       "item": [
         {
-          "name": "Get Auth Key",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "1ee012b9-9545-4236-a091-c92779a519e1",
-                "exec": [
-                  "tests[\"Status code is 200\"] = (responseCode.code === 200);",
-                  "",
-                  "if (responseCode.code === 200) {",
-                  "    try {",
-                  "        var authorization = JSON.parse(responseBody).access_token,",
-                  "            refresh_token = JSON.parse(responseBody).refresh_token;",
-                  "        postman.setEnvironmentVariable(\"authorization\", authorization);",
-                  "        refresh_token && postman.setEnvironmentVariable(\"refresh_token\", refresh_token);",
-                  "        postman.setNextRequest(\"Get Artist\");",
-                  "        console.log(\"Authorization retrieved. Moving to Get Artist.\");",
-                  "    }",
-                  "    catch (e) {",
-                  "        console.log(e);",
-                  "        throw false;",
-                  "    }",
-                  "}"
-                ],
-                "type": "text/javascript"
-              }
-            },
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "71e33530-2bea-47e9-b9f4-8e267fb6ef2d",
-                "exec": [
-                  "var client_credentials = (environment.client_id + ':' + environment.client_secret).encodeBase64();",
-                  "postman.setEnvironmentVariable(\"client_credentials\", client_credentials);",
-                  "",
-                  "environment.cloned_environment && (delete environment.cloned_environment);",
-                  "var environmentObjClone = _.cloneDeep(environment);",
-                  "postman.setEnvironmentVariable(\"cloned_environment\", JSON.stringify(environmentObjClone));"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "76bae0a0-5ba3-4e54-994e-36909ed0f03a",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Basic {{client_credentials}}"
-              }
-            ],
-            "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "grant_type",
-                  "value": "refresh_token",
-                  "type": "text"
-                },
-                {
-                  "key": "refresh_token",
-                  "value": "{{authorization}}",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "https://accounts.spotify.com/api/token"
-          },
-          "response": []
-        },
-        {
           "name": "Playlist",
           "event": [
             {
@@ -647,8 +572,7 @@
       },
       "request": {
         "method": "GET",
-        "header": [],
-        "url": null
+        "header": []
       },
       "response": []
     }
@@ -690,7 +614,7 @@
   ],
   "variable": [
     {
-      "id": "41cac74d-deb8-4b9c-afef-cd1a36b1c604",
+      "id": "99f831a1-38ac-4e15-8ff7-2d6438f530e4",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
