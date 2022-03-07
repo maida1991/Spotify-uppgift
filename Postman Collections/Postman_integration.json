@@ -123,6 +123,10 @@
               "script": {
                 "id": "65e91eab-751b-44be-a4ec-80eafa950244",
                 "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
                   "pm.test(\"Artist's name\", function () {\r",
                   "    pm.expect(pm.response.text()).to.include(\"Adele\");\r",
                   "});\r",
@@ -132,9 +136,7 @@
                   "    pm.expect(pm.response.text()).to.include(\"30\");\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
-                  "});"
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -606,7 +608,7 @@
   ],
   "variable": [
     {
-      "id": "62b60c13-e523-4137-8d5e-473345f7c533",
+      "id": "b8356d88-278d-4daa-938f-bb3e4e2d2c60",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
