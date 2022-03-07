@@ -131,7 +131,10 @@
                   "pm.test(\"Albums name\", function () {\r",
                   "    pm.expect(pm.response.text()).to.include(\"30\");\r",
                   "});\r",
-                  ""
+                  "\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -603,7 +606,7 @@
   ],
   "variable": [
     {
-      "id": "c7bed3f4-dd86-4455-84b7-3efb0a19f7e3",
+      "id": "62b60c13-e523-4137-8d5e-473345f7c533",
       "key": "variable_key",
       "value": "BQDLcqy6dZe3qBDT5M0HWSDQGkB2yiSqfTqxZT51DRK0YRnAySfd_yu-lV1Fji0y1PP4AlvzgEps7vIDwZ7hU-v9UER_ck5J8nB6oQwm-4WTngNeSEC71PvLR1ijX8Lv_QgKtpJYpyOXkIWZgO_SZ5zfH9z1ubk_xscMdGvdu4Tq93-xsBTRIXrS8G5jjW-beVTS3wE2G5lP5Z0iSumhb3vC6Nomg0QyWPFhikE3-A"
     }
